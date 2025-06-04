@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddExtensionsPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddExtensionsPass;
 use Knp\Menu\MenuFactory;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Config\Definition\Exception\InvalidConfigurationException;

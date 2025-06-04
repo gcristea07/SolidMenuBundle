@@ -1,9 +1,9 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\Provider;
+namespace SolidCloud\Bundle\MenuBundle\Tests\Provider;
 
-use Knp\Bundle\MenuBundle\Provider\BuilderAliasProvider;
-use Knp\Bundle\MenuBundle\Tests\Stubs\TestKernel;
+use SolidCloud\Bundle\MenuBundle\Provider\BuilderAliasProvider;
+use SolidCloud\Bundle\MenuBundle\Tests\Stubs\TestKernel;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 

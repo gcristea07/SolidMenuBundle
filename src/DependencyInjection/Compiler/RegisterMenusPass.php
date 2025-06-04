@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;

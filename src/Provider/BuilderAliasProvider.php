@@ -5,7 +5,6 @@ namespace Knp\Bundle\MenuBundle\Provider;
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
 use Knp\Menu\Provider\MenuProviderInterface;
-use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\KernelInterface;
 
@@ -18,7 +17,10 @@ final class BuilderAliasProvider implements MenuProviderInterface
 {
     private array $builders = [];
 
-    public function __construct(private KernelInterface $kernel, private ContainerInterface $container, private FactoryInterface $menuFactory)
+    public function __construct(
+        private KernelInterface    $kernel,
+        private ContainerInterface $container,
+        private FactoryInterface   $menuFactory)
     {
     }
 
@@ -81,7 +83,7 @@ final class BuilderAliasProvider implements MenuProviderInterface
 
         if (!isset($this->builders[$name])) {
             $bundle = $this->kernel->getBundle($bundleName);
-            $try = $bundle->getNamespace().'\\Menu\\'.$className;
+            $try = $bundle->getNamespace() . '\\Menu\\' . $className;
 
             if (!\class_exists($try)) {
                 throw new \InvalidArgumentException(\sprintf('Unable to find menu builder "%s" in bundle %s.', $try, $name));

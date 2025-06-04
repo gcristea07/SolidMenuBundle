@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddProvidersPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddProvidersPass;
 use Knp\Menu\Provider\ChainProvider;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\Argument\IteratorArgument;

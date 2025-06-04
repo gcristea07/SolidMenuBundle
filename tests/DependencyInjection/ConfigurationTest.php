@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection;
 
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;

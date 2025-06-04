@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\DependencyInjection;
+namespace SolidCloud\Bundle\MenuBundle\DependencyInjection;
 
 use Knp\Menu\Factory\ExtensionInterface;
 use Knp\Menu\ItemInterface;
@@ -11,11 +11,11 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 
-class KnpMenuExtension extends Extension implements PrependExtensionInterface
+class SolidMenuExtension extends Extension implements PrependExtensionInterface
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
         $loader->load('menu.xml');
 
         $configuration = new Configuration();
@@ -46,12 +46,12 @@ class KnpMenuExtension extends Extension implements PrependExtensionInterface
 
     public function getNamespace(): string
     {
-        return 'http://knplabs.com/schema/dic/menu';
+        return '';
     }
 
     public function getXsdValidationBasePath(): string
     {
-        return __DIR__.'/../Resources/config/schema';
+        return __DIR__ . '/../Resources/config/schema';
     }
 
     public function prepend(ContainerBuilder $container): void
@@ -61,7 +61,7 @@ class KnpMenuExtension extends Extension implements PrependExtensionInterface
         }
 
         $refl = new \ReflectionClass(ItemInterface::class);
-        $path = \dirname($refl->getFileName()).'/Resources/views';
+        $path = \dirname($refl->getFileName()) . '/Resources/views';
 
         $container->prependExtensionConfig('twig', ['paths' => [$path]]);
     }

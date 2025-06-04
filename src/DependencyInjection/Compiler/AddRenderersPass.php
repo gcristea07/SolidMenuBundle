@@ -1,8 +1,7 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler;
 
-use Knp\Menu\Renderer\PsrProvider;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\Compiler\ServiceLocatorTagPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddVotersPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddVotersPass;
 use Knp\Menu\Matcher\Matcher;
 use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\TestCase;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\KnpMenuExtension;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\KnpMenuExtension;
 use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

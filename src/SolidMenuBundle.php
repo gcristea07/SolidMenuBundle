@@ -1,17 +1,17 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle;
+namespace SolidCloud\Bundle\MenuBundle;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddExtensionsPass;
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddProvidersPass;
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddRenderersPass;
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddVotersPass;
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\MenuBuilderPass;
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\RegisterMenusPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddExtensionsPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddProvidersPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddRenderersPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddVotersPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\MenuBuilderPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\RegisterMenusPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-final class KnpMenuBundle extends Bundle
+final class SolidMenuBundle extends Bundle
 {
     public function build(ContainerBuilder $container): void
     {

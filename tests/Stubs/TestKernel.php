@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\Stubs;
+namespace SolidCloud\Bundle\MenuBundle\Tests\Stubs;
 
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;

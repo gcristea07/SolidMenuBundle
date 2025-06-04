@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\Templating;
+namespace SolidCloud\Bundle\MenuBundle\Tests\Templating;
 
-use Knp\Bundle\MenuBundle\Templating\Helper\MenuHelper;
+use SolidCloud\Bundle\MenuBundle\Templating\Helper\MenuHelper;
 use Knp\Menu\ItemInterface;
 use PHPUnit\Framework\Attributes\Group;
 use PHPUnit\Framework\TestCase;

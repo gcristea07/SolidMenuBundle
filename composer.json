@@ -1,22 +1,11 @@
 {
-    "name": "knplabs/knp-menu-bundle",
-    "description": "This bundle provides an integration of the KnpMenu library",
+    "name": "solidcloud/solid-menu-bundle",
+    "description": "This bundle provides themes for KnpMenu library",
     "keywords": ["menu"],
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
-        {
-            "name": "Knplabs",
-            "homepage": "http://knplabs.com"
-        },
-        {
-            "name": "Christophe Coevoet",
-            "email": "stof@notk.org"
-        },
-        {
-            "name": "Symfony Community",
-            "homepage": "https://github.com/KnpLabs/KnpMenuBundle/contributors"
-        }
+
     ],
     "require": {
         "php": "^8.1",
@@ -30,13 +19,14 @@
         "phpunit/phpunit": "^10.5 | ^11.5 | ^12.1",
         "symfony/expression-language": "^5.4 | ^6.0 | ^7.0",
         "symfony/phpunit-bridge": "^6.0 | ^7.0",
-        "symfony/templating": "^5.4 | ^6.0 | ^7.0"
-    },
+        "symfony/templating": "^5.4 | ^6.0 | ^7.0",
+		"ext-dom": "*"
+	},
     "autoload": {
-        "psr-4": { "Knp\\Bundle\\MenuBundle\\": "src" }
+        "psr-4": { "SolidCloud\\Bundle\\MenuBundle\\": "src" }
     },
     "autoload-dev": {
-        "psr-4": { "Knp\\Bundle\\MenuBundle\\Tests\\": "tests" }
+        "psr-4": { "SolidCloud\\Bundle\\MenuBundle\\Tests\\": "tests" }
     },
     "extra": {
         "branch-alias": {

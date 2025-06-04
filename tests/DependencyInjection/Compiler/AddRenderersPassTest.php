@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\AddRenderersPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\AddRenderersPass;
 use Knp\Menu\Renderer\PsrProvider;
 use Knp\Menu\Renderer\TwigRenderer;
 use PHPUnit\Framework\TestCase;

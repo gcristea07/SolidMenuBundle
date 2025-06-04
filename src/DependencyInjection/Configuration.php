@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\DependencyInjection;
+namespace SolidCloud\Bundle\MenuBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

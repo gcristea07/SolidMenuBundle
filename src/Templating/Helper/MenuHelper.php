@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Templating\Helper;
+namespace SolidCloud\Bundle\MenuBundle\Templating\Helper;
 
 use Knp\Menu\ItemInterface;
 use Knp\Menu\Matcher\MatcherInterface;
@@ -10,7 +10,10 @@ use Symfony\Component\Templating\Helper\Helper as TemplatingHelper;
 
 class MenuHelper extends TemplatingHelper
 {
-    public function __construct(private Helper $helper, private MatcherInterface $matcher, private MenuManipulator $menuManipulator)
+    public function __construct(
+        private Helper           $helper,
+        private MatcherInterface $matcher,
+        private MenuManipulator  $menuManipulator)
     {
     }
 
@@ -30,7 +33,7 @@ class MenuHelper extends TemplatingHelper
      * Renders a menu with the specified renderer.
      *
      * @param ItemInterface|string|array $menu
-     * @param string                     $renderer
+     * @param string $renderer
      *
      * @return string
      */
@@ -43,7 +46,7 @@ class MenuHelper extends TemplatingHelper
      * Returns an array ready to be used for breadcrumbs.
      *
      * @param ItemInterface|array|string $menu
-     * @param string|array|null          $subItem
+     * @param string|array|null $subItem
      *
      * @return array
      */
@@ -105,6 +108,6 @@ class MenuHelper extends TemplatingHelper
      */
     public function getName()
     {
-        return 'knp_menu';
+        return 'solid_menu';
     }
 }

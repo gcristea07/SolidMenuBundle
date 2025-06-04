@@ -1,8 +1,8 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
+namespace SolidCloud\Bundle\MenuBundle\Tests\DependencyInjection\Compiler;
 
-use Knp\Bundle\MenuBundle\DependencyInjection\Compiler\RegisterMenusPass;
+use SolidCloud\Bundle\MenuBundle\DependencyInjection\Compiler\RegisterMenusPass;
 use Knp\Menu\MenuItem;
 use Knp\Menu\Provider\LazyProvider;
 use PHPUnit\Framework\TestCase;
