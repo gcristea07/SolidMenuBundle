@@ -18,10 +18,3 @@ directory of the bundle:
 This bundle's job is to integrate a standalone PHP menu library called [KnpMenu](https://github.com/KnpLabs/KnpMenu).
 You can learn a lot more about how this library works by reading that library's
 documentation.
-
-
-## Credits
-
-This bundle was originally ported from [ioMenuPlugin](https://github.com/weaverryan/ioMenuPlugin),
-a menu plugin for symfony1. It has since been developed by [knpLabs](https://knplabs.com) and
-the Symfony community.
