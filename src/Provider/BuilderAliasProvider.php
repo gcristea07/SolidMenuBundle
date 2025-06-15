@@ -1,6 +1,6 @@
 <?php
 
-namespace Knp\Bundle\MenuBundle\Provider;
+namespace SolidCloud\Bundle\MenuBundle\Provider;
 
 use Knp\Menu\FactoryInterface;
 use Knp\Menu\ItemInterface;
